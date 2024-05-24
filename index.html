@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Organic Food</title>
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <h1>FRUIT</h1>
+          </div>
+          <ul id="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+          <i id="icon" class="fa fa-bars"></i>
+          <div class="icon flex1">
+            <div class="icon-box">
+              <i class="fa fa-heart"></i>
+              <input type="text" name="" value="9" />
+            </div>
+            <div class="icon-box">
+              <i class="fa fa-shopping-bag"></i>
+              <input type="text" name="" value="5" />
+            </div>
+            <div class="icon-box flex1">
+              <p>item: &nbsp;</p>
+              <h5>$150.00;</h5>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      let bar = document.getElementById("icon");
+      let menu = document.getElementById("menu");
+
+      bar.addEventListener("click", function () {
+        if (bar.className === "fa fa-bars") {
+          bar.className = "fa fa-times";
+          menu.style.right = 0;
+        } else {
+          bar.className = "fa fa-bars";
+          menu.style.right = "-1000px";
+        }
+      });
+    </script>
+
+    <section class="head">
+      <div class="container flex">
+        <div class="sidenav">
+          <div class="content">
+            <div class="dropdown-btn">
+              <i class="fa fa-bars"></i>
+              <label>All Departments</label>
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-container">
+              <a href="#">oatmeal</a>
+              <a href="#">fresh banana</a>
+              <a href="#">fresh meat</a>
+              <a href="#">papayaya&crisps</a>
+              <a href="#">fresh onion</a>
+              <a href="#">fast food</a>
+              <a href="#">butter & eggs</a>
+              <a href="#">ocean foods</a>
+              <a href="#">fresh berries</a>
+              <a href="#">fruit & nut gifts</a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="content flex">
+            <div class="top flex">
+              <div class="search">
+                <div class="content flex">
+                  <div class="box">
+                    <label>All Categories</label>
+                    <i class="fa fa-caret-down"></i>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="what do you need?"
+                    name=""
+                    value=""
+                  />
+                  <span>SEARCH</span>
+                </div>
+              </div>
+              <div class="call flex1">
+                <i class="fa fa-phone"></i>
+                <div class="contact">
+                  <h4>+977 981325087</h4>
+                  <p>SUPPORT 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom flex1">
+            <div class="text">
+              <h4>FRUIT FRESH</h4>
+              <h1>Vegetable 1005 Organic</h1>
+              <p>Free Pickup and Delivary Availables</p>
+              <br /><br /><br />
+              <a href="">SHOP NOW</a>
+            </div>
+            <div class="img">
+              <div class="img-box">
+                <img src="./assets/img/b.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (let i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          var dropdowncontent = this.nextElementSibling;
+          if (dropdowncontent.style.display === "block") {
+            dropdowncontent.style.display = "none";
+          } else {
+            dropdowncontent.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <section class="slider">
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="top">
+              <img src="./assets/img/s.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>DRINK FRUITS</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <img src="./assets/img/s2.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>DRINK FRUITS</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <img src="./assets/img/s3.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>DRINK FRUITS</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <img src="./assets/img/s.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>DRINK FRUITS</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <img src="./assets/img/s2.png" alt="" />
+            </div>
+            <div class="text">
+              <h3>DRINK FRUITS</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <section class="product">
+      <div class="container">
+        <div class="heading">
+          <h1>Featured Product</h1>
+        </div>
+        <div class="content">
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Oranges</a></li>
+            <li><a href="#">Fresh Meat</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fast Food</a></li>
+          </ul>
+          <div class="box">
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f8.jfif" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f9.jpg" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f10.jpg" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f11.jpg" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f12.webp" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f13.webp" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f14.webp" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <img src="./assets/img/f15.webp" alt="" />
+                <div class="overlay">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-shopping-bag"></i>
+                    <i class="fa fa-retweet"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <div class="content">
+          <div class="left flex1">
+            <div class="img">
+              <img src="./assets/img/s3.png" alt="" />
+            </div>
+            <div class="text">
+              <h1>Summer Fruit</h1>
+              <p>100% Pur Natural Fruit Juics</p>
+              <a href="#" class="btn1">SHOP</a>
+            </div>
+          </div>
+          <div class="left flex1">
+            <div class="img">
+              <img src="./assets/img/b.webp" alt="" />
+            </div>
+            <div class="text">
+              <h1>Summer Fruit</h1>
+              <p>100% Pur Natural Fruit Juics</p>
+              <a href="#" class="btn1">SHOP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-product">
+      <div class="container">
+        <div class="content grid">
+          <div class="box">
+            <div class="top flex">
+              <h1>Latest Product</h1>
+              <a href="#" class="btn1">View All</a>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f10.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f11.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f12.webp" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="top flex">
+              <h1>Top Rated Product</h1>
+              <a href="#" class="btn1">View All</a>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f13.webp" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f14.webp" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f15.webp" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="top flex">
+              <h1>Review Product</h1>
+              <a href="#" class="btn1">View All</a>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f8.jfif" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f9.jpg" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="img">
+                <img src="./assets/img/f13.webp" alt="" />
+              </div>
+              <div class="text">
+                <p>Crab Pool Security</p>
+                <h3>$40.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="heading">
+          <h1>From The Blog</h1>
+        </div>
+        <div class="box flex">
+          <div class="content">
+            <div class="img">
+              <img src="./assets/img/f9.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="date">
+                <i class="fa fa-calendar"></i>
+                <label>May 25,2024</label>
+                <i class="fa fa-comment"></i>
+                <label>10</label>
+              </div>
+              <div class="para">
+                <h2>Cooking Tips make cooking Simple</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="img">
+              <img src="./assets/img/f15.webp" alt="" />
+            </div>
+            <div class="text">
+              <div class="date">
+                <i class="fa fa-calendar"></i>
+                <label>May 25,2024</label>
+                <i class="fa fa-comment"></i>
+                <label>10</label>
+              </div>
+              <div class="para">
+                <h2>Cooking Tips make cooking Simple</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="img">
+              <img src="./assets/img/f11.jpg" alt="" />
+            </div>
+            <div class="text">
+              <div class="date">
+                <i class="fa fa-calendar"></i>
+                <label>May 25,2024</label>
+                <i class="fa fa-comment"></i>
+                <label>10</label>
+              </div>
+              <div class="para">
+                <h2>Cooking Tips make cooking Simple</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <div class="logo">
+              <h1>FRUIT</h1>
+            </div>
+            <div class="para">
+              <p>Address:50-78 Road 12545<br>
+              New York <br> <br>
+              Phone: +65 11 188 888 <br> <br>
+              Email: YourEmail@Gmail.com <br> <br>
+            </p>
+            </div>
+          </div>
+          <div class="middle">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>About Us</li>
+              <li>About Our Shop</li>
+              <li>Secure Shopping</li>
+              <li>Dalivery Information</li>
+              <li>Privacy Policy</li>
+              <li>Our Sitemap</li>
+            </ul>
+          </div>
+          <div class="middle-second">
+            <ul>
+              <li>Who we are</li>
+              <li>Our Services</li>
+              <li>Project</li>
+              <li>Contact</li>
+              <li>Innovation</li>
+              <li>TestTimonials</li>
+            </ul>
+          </div>
+          <div class="right">
+            <h3>Join our Newsletter Now</h3>
+            <p>Get E-mail Updates about our latest Shop nad and classes.</p>
+            <div class="email flex1">
+              <input type="text" placeholder="Enter your email" name="" value="">
+              <h4>SUBSCRIBE</h4>
+            </div>
+            <div class="social-icon">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="payment flex">
+          <p>copyright (c) 2024 copyright holder all right</p>
+          <div class="payment-icon">
+            <div class="img">
+              <img src="./assets/img/p.jfif" alt="">
+              <img src="./assets/img/p2.jfif" alt="">
+              <img src="./assets/img/p3.png" alt="">
+              <img src="./assets/img/p4.png" alt="">
+              <img src="./assets/img/p5.png" alt="">
+              <img src="./assets/img/p6.jfif" alt="">
+              <img src="./assets/img/p7.png" alt="">
+              <img src="./assets/img/p8.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
